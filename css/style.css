@@ -1,0 +1,130 @@
+.inline-block {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.logo {
+  width: 23%;
+  padding: 1%;
+  text-align: center;
+}
+
+.logoImg {
+  float: left;
+}
+
+nav {
+  width: 72%;
+  padding: 1%;
+}
+
+nav ul {
+  float: right;
+}
+
+.heroImg {
+  height: 600px;
+  padding: 25px;
+}
+
+.content {
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+footer {
+  background-color: #373738;
+  padding: 20px 0px;
+}
+
+footer ul {
+  display: inline-block;
+  vertical-align: top;
+}
+
+footer ul li {
+  padding: 5px 10px;
+  color: #fff;
+}
+
+.flexContainer {
+  display: flex;
+}
+
+.flexContainer div {
+  width: 33%;
+  padding: 40px;
+}
+
+.workGrid {
+  display: grid;
+  grid-template-columns: 1fr, 1fr;
+  grid-template-rows: 700px, 700px;
+  grid-template-areas: 
+    "project1image  project1content"
+    "project2image  project2content";
+  align-items: space-between;
+}
+
+.project1_img {
+  grid-area: project1image;
+}
+
+.project1_cont {
+  grid-area: project1content;
+  margin-left: 40px;
+}
+
+.project2_img {
+  grid-area: project2image;
+}
+
+.project2_cont {
+  grid-area: project2content;
+  margin-left: 40px;
+}
+
+.workGrid img {
+  width: 100%;
+}
+
+.workGrid button {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #04AA6D;
+  padding: 8px 24px 8px 24px;
+
+}
+
+.workGrid button:hover {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.viewAll {
+  text-align: center;
+}
+
+@media only screen and (max-width:600px){
+
+  .flexContainer {
+  flex-direction: column;
+}  
+
+.flexContainer > div {
+  width: 100%;
+}
+
+.workGrid {
+  grid-template-columns: 1fr;
+  grid-template-rows: auto, auto, auto, auto;
+  grid-template-areas: 
+    "project1image"  
+    "project1content"
+    "project2image"  
+    "project2content"
+  ;
+}
+
+}
