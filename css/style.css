@@ -27,7 +27,7 @@ nav ul {
   padding: 25px;
 }
 
-.content {
+.heroContent {
   width: 500px;
   margin: 0 auto;
   text-align: center;
@@ -94,7 +94,7 @@ footer ul li {
   color: black; 
   border: 2px solid #04AA6D;
   padding: 8px 24px 8px 24px;
-
+  margin-top: 24px;
 }
 
 .workGrid button:hover {
@@ -127,4 +127,90 @@ footer ul li {
   ;
 }
 
+}
+
+/* Accordion Element 1 */
+
+.accordionWrapper {
+  max-width: 500px;
+}
+.accordian1 {
+  background-color: #3F3F3F;
+  font-size: 18px;
+  font-family: helvetica;
+  color: white;
+  display: flex;
+  cursor: pointer;
+}
+.accordian1 > div {
+  padding: 20px;
+}
+.text {
+  width: 93%;
+}
+.indicator {
+  background-color: #545454;
+  width: 7%;
+  text-align:center;
+}
+.toggleMe1 {
+  background-color: lightgrey; 
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  display: none;
+}
+.toggleMe1 ul {
+  list-style: none;
+  padding:0;
+  margin: 0;
+}
+.toggleMe1 ul li {
+  font-size: 18px;
+  margin:0;
+  display: block;
+  padding: 20px;
+}
+
+/* Accordion Element 2 */
+
+.accordionWrapper {
+  max-width: 500px;
+}
+.accordian2 {
+  background-color: #3F3F3F;
+  font-size: 18px;
+  font-family: helvetica;
+  color: white;
+  display: flex;
+  cursor: pointer;
+}
+.accordian2 > div {
+  padding: 20px;
+}
+.text {
+  width: 93%;
+}
+.indicator {
+  background-color: #545454;
+  width: 7%;
+  text-align:center;
+}
+.toggleMe2 {
+  background-color: lightgrey; 
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  display: none;
+}
+.toggleMe2 ul {
+  list-style: none;
+  padding:0;
+  margin: 0;
+}
+.toggleMe2 ul li {
+  font-size: 18px;
+  margin:0;
+  display: block;
+  padding: 20px;
 }
